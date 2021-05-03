@@ -3,6 +3,7 @@ package com.example.toetactic
 import com.example.toetactic.api.GameService
 import com.example.toetactic.api.data.Game
 import com.example.toetactic.api.data.GameState
+import java.lang.System.err
 
 object GameManager {
 
@@ -14,9 +15,48 @@ object GameManager {
     fun createGame(player:String) =
         GameService.createGame(player,StartingGameState) { game: Game?, err: Int? ->
             if(err != null){
-                ///TODO("What is the error code? 406 you forgot something in the header. 500 the server di not like what you gave it")
+                 println(err)
             } else {
-                /// TODO("We have a game. What to do?)
+                if (game != null) {
+                    println("Players ${game.gameId}")
+                }
             }
         }
+
+    fun joinGame(player:String, gameId:String){
+        GameService.joinGame(player, gameId) { game: Game?, err: Int? ->
+            if(err == 406){
+                println(err)
+            } else {
+                if (game != null){
+                    println("Joined game with ID: ${game.gameId}")
+                }
+            }
+        }
+    }
+
+    fun updateGame(gameId:String, gameState: GameState){
+        GameService.updateGame(gameId, gameState) { game: Game?, err: Int? ->
+            if(err == 406){
+                println(err)
+            } else {
+                if (game != null){
+                    println("Updated game with ID: ${game.gameId}")
+                }
+            }
+
+        }
+    }
+
+    fun pollGame(gameId:String){
+        GameService.pollGame(gameId){ game: Game?, err: Int? ->
+            if(err == 406){
+                println(err)
+            } else {
+                if (game != null){
+                    println("Polled game with ID: ${game.gameId}")
+                }
+            }
+        }
+    }
 }

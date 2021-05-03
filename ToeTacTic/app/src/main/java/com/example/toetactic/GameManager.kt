@@ -14,9 +14,11 @@ object GameManager {
     fun createGame(player:String) =
         GameService.createGame(player,StartingGameState) { game: Game?, err: Int? ->
             if(err != null){
-                ///TODO("What is the error code? 406 you forgot something in the header. 500 the server di not like what you gave it")
+                 println(err)
             } else {
-                /// TODO("We have a game. What to do?)
+                if (game != null) {
+                    println("Players ${game.gameId}")
+                }
             }
         }
 }

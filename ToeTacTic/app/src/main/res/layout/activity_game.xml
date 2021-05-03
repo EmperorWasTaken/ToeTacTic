@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_00"
+                android:id="@+id/b00"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -30,7 +30,7 @@
                 android:layout_margin="4dp"/>
 
             <Button
-                android:id="@+id/_01"
+                android:id="@+id/b01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -39,7 +39,7 @@
                 />
 
             <Button
-                android:id="@+id/_02"
+                android:id="@+id/b02"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_10"
+                android:id="@+id/b10"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -62,7 +62,7 @@
                 android:layout_margin="4dp"/>
 
             <Button
-                android:id="@+id/_11"
+                android:id="@+id/b11"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -71,7 +71,7 @@
                 />
 
             <Button
-                android:id="@+id/_12"
+                android:id="@+id/b12"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -86,14 +86,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_20"
+                android:id="@+id/b20"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="" android:layout_margin="4dp"/>
 
             <Button
-                android:id="@+id/_21"
+                android:id="@+id/b21"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -101,7 +101,7 @@
                 android:layout_margin="4dp"/>
 
             <Button
-                android:id="@+id/_22"
+                android:id="@+id/b22"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"

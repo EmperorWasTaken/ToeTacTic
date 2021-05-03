@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        GameManager.player = "Petter"
-        GameManager.createGame(GameManager.player!!, GameManager.StartingGameState)
+        //GameManager.player = "Petter"
+        //GameManager.createGame(GameManager.player!!, GameManager.StartingGameState)
     }
 }

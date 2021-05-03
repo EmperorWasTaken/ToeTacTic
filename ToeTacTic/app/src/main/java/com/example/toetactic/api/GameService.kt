@@ -120,7 +120,7 @@ object GameService {
         requestData.put("gameId", gameId)
 
         val request = object : JsonObjectRequest(
-            Request.Method.POST,url, requestData,
+            Request.Method.GET,url, requestData,
             {
                 val game = Gson().fromJson(it.toString(0), Game::class.java)
                 callback(game,null)

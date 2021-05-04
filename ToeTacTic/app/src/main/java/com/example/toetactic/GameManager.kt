@@ -10,7 +10,7 @@ object GameManager {
     var player:String? = null
     var state:GameState? = null
 
-    val StartingGameState:GameState = listOf(listOf(0,0,0),listOf(0,0,0),listOf(0,0,0))
+    val StartingGameState = mutableListOf(mutableListOf(0,0,0),mutableListOf(0,0,0),mutableListOf(0,0,0))
 
     fun createGame(player:String) =
         GameService.createGame(player,StartingGameState) { game: Game?, err: Int? ->
@@ -18,7 +18,7 @@ object GameManager {
                  println(err)
             } else {
                 if (game != null) {
-                    println("Players ${game.gameId}")
+                    println("You created a game with token: ${game.gameId}")
                 }
             }
         }
@@ -29,7 +29,7 @@ object GameManager {
                 println(err)
             } else {
                 if (game != null){
-                    println("Joined game with ID: ${game.gameId}")
+                    println("Joined game with token: ${game.gameId}")
                 }
             }
         }
@@ -41,7 +41,7 @@ object GameManager {
                 println(err)
             } else {
                 if (game != null){
-                    println("Updated game with ID: ${game.gameId}")
+                    println("Updated game with token: ${game.gameId}")
                 }
             }
 
@@ -54,7 +54,7 @@ object GameManager {
                 println(err)
             } else {
                 if (game != null){
-                    println("Polled game with ID: ${game.gameId}")
+                    println("Polled game with token: ${game.gameId}")
                 }
             }
         }

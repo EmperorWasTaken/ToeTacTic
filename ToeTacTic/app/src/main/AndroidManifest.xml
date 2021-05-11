@@ -23,8 +23,8 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".GameActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".GameActivity" android:theme="@style/Theme.ToeTacTic"/>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.ToeTacTic">
         </activity>
     </application>
 

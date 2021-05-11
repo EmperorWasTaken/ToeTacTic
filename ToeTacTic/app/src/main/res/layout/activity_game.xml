@@ -13,7 +13,21 @@
         android:layout_height="wrap_content"
         android:gravity="top"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Hello"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/player_1"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="vs."
         android:textSize="35dp"/>
 
 
@@ -22,9 +36,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="right"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Hello"
+        android:text="@string/player_2"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/endGameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="70dp"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/gameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/gameid"
         android:textSize="35dp"/>
 
 
@@ -50,7 +94,13 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text=""
-                android:layout_margin="4dp"/>
+                android:layout_margin="4dp"
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b01"
@@ -59,7 +109,12 @@
                 android:layout_weight="1"
                 android:text=""
                 android:layout_margin="4dp"
-                />
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b02"
@@ -68,7 +123,12 @@
                 android:layout_weight="1"
                 android:text=""
                 android:layout_margin="4dp"
-                />
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -82,7 +142,13 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text=""
-                android:layout_margin="4dp"/>
+                android:layout_margin="4dp"
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b11"
@@ -91,7 +157,12 @@
                 android:layout_weight="1"
                 android:text=""
                 android:layout_margin="4dp"
-                />
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b12"
@@ -100,7 +171,12 @@
                 android:layout_weight="1"
                 android:text=""
                 android:layout_margin="4dp"
-                />
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -113,7 +189,13 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:text="" android:layout_margin="4dp"/>
+                android:text="" android:layout_margin="4dp"
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b21"
@@ -121,7 +203,13 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text=""
-                android:layout_margin="4dp"/>
+                android:layout_margin="4dp"
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
             <Button
                 android:id="@+id/b22"
@@ -129,7 +217,13 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text=""
-                android:layout_margin="4dp"/>
+                android:layout_margin="4dp"
+                android:backgroundTint="#2C2C2E"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
 
         </LinearLayout>
 

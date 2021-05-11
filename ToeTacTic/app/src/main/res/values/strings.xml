@@ -17,4 +17,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="player_name">Player name</string>
     <string name="toetactic_title">ToeTacTic</string>
+    <string name="gameid">GameId</string>
+    <string name="player_2">Player 2</string>
+    <string name="player_1">Player 1</string>
 </resources>

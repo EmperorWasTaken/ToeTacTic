@@ -24,6 +24,8 @@
         android:text="ToeTacTic"
         android:textColor="#2C2C2E"
         android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textStyle="bold" />
 
     <ProgressBar
@@ -37,10 +39,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="150dp"
         android:padding="15dp"
-
-        android:text="Made by Kai Kåsa"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Made by Emperor"
         android:textColor="#2C2C2E"
         android:textSize="15dp"
         android:textStyle="bold"

@@ -330,11 +330,11 @@ class GameActivity : AppCompatActivity() {
     }
 
     private fun playEndingSequence(parentActivity: AppCompatActivity, message: String): Unit {
-        val endGameTextView = parentActivity.findViewById<TextView>(R.id.endGameMessage)
+        val endGameTextView = parentActivity.findViewById<TextView>(R.id.result)
         endGameTextView.text = message
 
-        val translateAnimation = TranslateAnimation(0f, 0f, 0f, -500f)
-        translateAnimation.duration = 3500
+        val translateAnimation = TranslateAnimation(0f, 0f, 0f, -350f)
+        translateAnimation.duration = 1500
 
         endGameTextView.startAnimation(translateAnimation)
 
@@ -342,7 +342,7 @@ class GameActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 1450)
+        }, 8000)
     }
 
 

@@ -44,12 +44,12 @@
         android:textSize="35dp"/>
 
     <TextView
-        android:id="@+id/endGameMessage"
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

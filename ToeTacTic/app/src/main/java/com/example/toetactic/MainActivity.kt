@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         if(GameManager.thisGame != null){
-            println("Any values?${GameManager.thisGame!!}")
             Log.d(TAG, "${GameManager.thisGame!!}")
         }
 
@@ -61,8 +60,6 @@ class MainActivity : AppCompatActivity() {
 
                         val intent = Intent(this, GameActivity::class.java)
                         startActivity(intent)
-
-                        Log.println(Log.ERROR, TAG, "${GameManager.thisGame}")
 
                     }
                 }

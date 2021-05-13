@@ -31,7 +31,6 @@ class GameActivity : AppCompatActivity() {
         binding = ActivityGameBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        println("Any values2?${GameManager.thisGame}")
         Log.d(TAG, "${GameManager.thisGame}")
 
         Log.println(Log.DEBUG,TAG,"${GameManager.thisGame}")
@@ -168,7 +167,6 @@ class GameActivity : AppCompatActivity() {
         } else {
             sign = "O"
         }
-
         return sign
 
     }
@@ -182,7 +180,6 @@ class GameActivity : AppCompatActivity() {
         } else {
             player = 2
         }
-
         GameManager.makeMove(player, row, button)
 
     }
@@ -223,17 +220,11 @@ class GameActivity : AppCompatActivity() {
 
     fun resultChecker(){
 
-
-
         if(GameManager.thisGame!!.players.size < 2){
 
             return
 
         }
-
-
-
-        Log.println(Log.DEBUG,TAG,"${GameManager.thisGame}")
 
 
         if(GameManager.thisGame!!.state [0][0] == 1 && GameManager.thisGame!!.state [0][1] == 1 && GameManager.thisGame!!.state [0][2] == 1){

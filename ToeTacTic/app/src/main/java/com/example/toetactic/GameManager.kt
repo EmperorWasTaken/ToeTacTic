@@ -11,7 +11,7 @@ object GameManager {
 
     var TAG = "GameManager"
 
-    //lateinit var thisGame: Game
+
     var thisGame: Game? = null
     var player:String? = null
     var state:GameState? = null
@@ -86,7 +86,6 @@ object GameManager {
     }
 
     fun updateThisGame(){
-
         thisGame?.let { onGame?.invoke(it) }
 
     }
